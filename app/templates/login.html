@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h1>Login</h1>
+  <form method="post">
+    <div class="form-row">
+      <label>Username</label>
+      <input type="text" name="username" required>
+    </div>
+    <div class="form-row">
+      <label>Password</label>
+      <input type="password" name="password" required>
+    </div>
+    <button class="btn" type="submit">Sign In</button>
+  </form>
+  <p class="muted">Demo credentials: <code>admin / 1234</code></p>
+</section>
+{% endblock %}
